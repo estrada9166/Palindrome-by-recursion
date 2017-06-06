@@ -14,9 +14,9 @@ var palindrome = function(str) {
         if(str.length > 0){
             palindrome(str.slice(1, -1));
         }
-        return 'Palindrome';
+        return true;
     }
-    return 'Not Palindrome';
+    return false;
 };
 
 var assertEqual = function(expected, result) {
@@ -29,5 +29,3 @@ var assertEqual = function(expected, result) {
 console.log(palindrome(word));
 console.log(assertEqual('Not Palindrome', palindrome('aloh')));
 console.log(assertEqual('Palindrome', palindrome('RotOr')));
-
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
